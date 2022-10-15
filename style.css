@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container {
+    width: 340px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    font-family: Outfit;
+}
+
+.container .image {
+    position: relative;
+}
+.container .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .image::before {
+    content: "";
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 50%;
+    border-radius: 10px;
+
+}
+
+.container .image::after {
+    content: url(images/icon-view.svg);
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: -1;
+}
+.container .image:hover {
+    cursor: pointer;
+}
+.container .image:hover::before {
+    z-index: 1;
+}
+
+.container .image:hover::after {
+z-index: 2;
+}
+
+.container .content .eq {
+    padding-bottom: 20px;
+}
+
+
+.container .content .eq > h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.container .content .eq > h2:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content .eq p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;;
+    padding-top: 12px;
+    font-weight: 300;
+}
+
+.container .content .eq .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+.container .content .eq .price div {
+    display: flex;
+    align-items: center;
+
+}
+
+.container .content .eq .price div img {
+    padding-right: 5px;
+}
+
+.container .content .eq .price .pr {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content .creation {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.container .content .creation img {
+    max-width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+
+.container .content .creation p {
+    color: hsl(215, 51%, 70%);
+}
+
+.container .content .creation p span {
+    color: white;
+}
+
+.container .content .creation p span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
